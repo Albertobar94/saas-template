@@ -10,7 +10,7 @@
     "env:preview": "pnpm env:link  && vercel env pull --token $VERCEL_TOKEN --environment=preview",
     "env:dev": "pnpm env:link && vercel env pull --token $VERCEL_TOKEN --environment=developement",
     "env:prod": "pnpm env:link && vercel env pull --token $VERCEL_TOKEN --environment=production",
-    "env:link": "vercel link --token $VERCEL_TOKEN --scope $VERCEL_SCOPE --project $VERCEL_PORTAL_PROJECT --yes",
+    "env:link": "git  clean -xdf .vercel && vercel link --token $VERCEL_TOKEN --scope $VERCEL_SCOPE --project $VERCEL_PORTAL_PROJECT --yes",
     "format": "prettier --write .",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
