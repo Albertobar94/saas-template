@@ -7,8 +7,6 @@
   "scripts": {
     "build": "tsup",
     "clean": "git clean -xdf .turbo node_modules .next .cache .vitest tsconfig.tsbuildinfo",
-    "lint": "eslint src/ --ext .ts,.tsx",
-    "lint:fix": "eslint src/ --ext .ts,.tsx --fix",
     "postinstall": "pnpm build"
   },
   "dependencies": {

@@ -8,7 +8,7 @@
     "db:up": "turbo db:up",
     "db:down": "turbo db:down",
     "dev": "turbo dev",
-    "env:preview": "dotenv -- turbo env:preview",
+    "env:preview": "dotenv -- cross-env-shell \"turbo env:preview\"",
     "env:dev": "dotenv -- turbo env:dev",
     "env:prod": "dotenv -- turbo env:prod",
     "format": "eslint --no-cache --fix && prettier --write \"**/*.{ts,tsx,md}\"",
@@ -34,6 +34,7 @@
     "@testing-library/react": "^14.2.1",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/ui": "^1.2.2",
+    "cross-env": "^7.0.3",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.57.0",
     "husky": "^8.0.3",
@@ -41,7 +42,7 @@
     "jsdom": "^23.2.0",
     "prettier": "^3.2.5",
     "turbo": "^1.13.2",
-    "typescript": "^5.2.2",
+    "typescript": "5.1.6",
     "vercel": "^33.7.1",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^1.5.2"
@@ -55,11 +56,8 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@8.9.0",
-  "engines": {
-    "node": ">=18"
-  },
+  "packageManager": "pnpm@8.15.8",
   "volta": {
-    "node": "18.19.0"
+    "node": "20.13.1"
   }
 }
