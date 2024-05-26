@@ -1,4 +1,4 @@
-import { Separator } from "@repo/ui";
+import { Separator } from "@module/ui";
 import Link from "next/link";
 import { GoogleSignIn } from "./google-sign-in";
 import { EmailSignIn } from "./email-sign-in";

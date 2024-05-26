@@ -1,16 +1,15 @@
 {
-  "name": "@repo/trpc",
+  "name": "@package/trpc",
   "private": true,
   "scripts": {
-    "clean": "git clean -xdf .turbo node_modules .next .cache .vitest tsconfig.tsbuildinfo",
-    "format": "prettier --write .",
+    "clean": "git clean -xdf node_modules dist build .turbo .next .cache .vitest tsconfig.tsbuildinfo",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix"
   },
   "dependencies": {
-    "@repo/auth": "workspace:^",
-    "@repo/common": "workspace:*",
-    "@repo/database": "workspace:^",
+    "@package/auth": "workspace:^",
+    "@module/shared": "workspace:*",
+    "@package/database": "workspace:^",
     "@tanstack/react-query": "^5.29.2",
     "@trpc/client": "11.0.0-rc.340",
     "@trpc/react-query": "11.0.0-rc.340",
@@ -23,8 +22,8 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@repo/config": "workspace:*",
-    "@repo/eslint-config": "workspace:^",
+    "@package/config": "workspace:*",
+    "@package/eslint-config": "workspace:^",
     "@types/eslint": "^8.56.2",
     "@types/node": "^20.11.16",
     "@types/uuid": "^9.0.8"

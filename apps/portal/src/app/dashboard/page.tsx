@@ -8,7 +8,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@repo/ui";
+} from "@module/ui";
 import { type Metadata } from "next";
 import { Overview } from "./_components/overview-chart";
 import { RecentSales } from "./_components/recent-sales";

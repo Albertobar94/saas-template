@@ -2,14 +2,14 @@
 const nextjsConfig = {
   reactStrictMode: true,
   transpilePackages: [
-    "@repo/ui",
-    "@repo/common",
-    "@repo/database",
-    "@repo/auth",
-    "@repo/trpc",
-    "@repo/lib",
-    "@repo/analytics",
-    "@repo/stripe",
+    "@module/ui",
+    "@module/shared",
+    "@package/database",
+    "@package/auth",
+    "@package/trpc",
+    "@package/logger",
+    "@package/analytics",
+    "@package/stripe",
   ],
   images: {
     remotePatterns: [

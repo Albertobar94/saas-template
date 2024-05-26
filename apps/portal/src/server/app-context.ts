@@ -1,8 +1,8 @@
 import type { FetchCreateContextFnOptions } from "@trpc/server/adapters/fetch";
 import { v4 as generateUuidV4 } from "uuid";
-import { ContainerTokens, Headers } from "@repo/common/constants";
-import { Container } from "@repo/trpc/container";
-import { auth } from "./auth";
+import { Container } from "@package/trpc/container";
+import { auth } from "@module/auth";
+import { ContainerTokens, Headers } from "@module/shared/constants";
 
 export const createContext = async (opts?: FetchCreateContextFnOptions) => {
   // This is a server-side request

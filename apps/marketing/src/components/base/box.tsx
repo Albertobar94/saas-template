@@ -1,4 +1,4 @@
-import { cn } from "@repo/common/ui";
+import { cn } from "@module/shared/ui";
 
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;

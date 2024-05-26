@@ -1,9 +1,0 @@
-{
-  "extends": "@repo/config/typescript/library.json",
-  "compilerOptions": {
-    "module": "Preserve",
-    "moduleResolution": "Bundler"
-  },
-  "include": ["src", "tailwind.config.ts"],
-  "exclude": ["node_modules", "dist", "turbo"]
-}

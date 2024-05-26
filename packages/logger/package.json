@@ -1,0 +1,19 @@
+{
+  "name": "@package/logger",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .turbo node_modules .next .cache .vitest tsconfig.tsbuildinfo"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "tslog": "^4.9.2",
+    "@module/shared": "workspace:^"
+  },
+  "devDependencies": {
+    "@package/config": "workspace:^",
+    "@package/eslint-config": "workspace:^",
+    "@types/node": "^20.11.16",
+    "zod": "^3.22.4"
+  }
+}

@@ -1,5 +1,5 @@
 // Duplicated filed required in this folder for Next.js to build successfully
-// Source: @repo/analytics
+// Source: @package/analytics
 
 declare module "@analytics/mixpanel" {
   export interface MixpanelInitOptions {

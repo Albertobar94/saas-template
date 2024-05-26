@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/config/typescript/base.json",
+  "extends": "@package/config/typescript/library.json",
   "include": ["src", "drizzle.config.ts"],
-  "exclude": ["dist", "build", "node_modules", ".*"]
+  "exclude": ["node_modules"]
 }

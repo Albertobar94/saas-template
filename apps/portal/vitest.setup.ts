@@ -1,6 +1,6 @@
 import { vi } from "vitest";
-import type { Session } from "@repo/auth";
-import { UserRole } from "@repo/database/dto";
+import type { Session } from "@package/auth";
+import { UserRole } from "@package/database/dto";
 
 /* -------------------------------------------------------------------------- */
 /*                                Global Stubs                                */

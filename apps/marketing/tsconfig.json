@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/config/typescript/next.json",
+  "extends": "@package/config/typescript/next.json",
   "compilerOptions": {
     "paths": {
       "@/app/*": ["./src/app/*"],
@@ -9,5 +9,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", ".next"]
 }

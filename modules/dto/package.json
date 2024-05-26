@@ -1,0 +1,20 @@
+{
+  "name": "@module/dto",
+  "scripts": {
+    "clean": "git clean -xdf .turbo node_modules .next .cache .vitest tsconfig.tsbuildinfo",
+    "lint": "eslint src/ --ext .ts,.tsx",
+    "lint:fix": "eslint src/ --ext .ts,.tsx --fix",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@package/database": "workspace:*",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@package/config": "workspace:*",
+    "@package/eslint-config": "workspace:^"
+  }
+}

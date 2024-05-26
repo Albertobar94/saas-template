@@ -4,7 +4,7 @@
   "extends": "./base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "module": "esnext",
-    "moduleResolution": "Node"
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
   }
 }

@@ -16,6 +16,7 @@ const config: Config = {
   modulePaths: [compilerOptions.baseUrl], // <-- This will be set to 'baseUrl' value
   moduleNameMapper: {
     "^@/server/(.*)$": "<rootDir>/src/server/$1",
+    "^@/features/(.*)$": "<rootDir>/src/features/$1",
   },
 };
 

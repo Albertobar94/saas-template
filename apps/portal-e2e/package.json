@@ -1,5 +1,5 @@
 {
-  "name": "@repo/portal-e2e",
+  "name": "@app/portal-e2e",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.43.1",
-    "@repo/eslint-config": "workspace:^",
+    "@package/eslint-config": "workspace:^",
     "@types/node": "^20.11.16"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "extends": "@repo/config/typescript/next.json",
+  "extends": "@package/config/typescript/next.json",
   "compilerOptions": {
-    "experimentalDecorators": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
+    "experimentalDecorators": true,
     "skipLibCheck": true,
     "noEmit": true,
     "baseUrl": ".",
@@ -14,6 +14,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", "../../apps/portal/server/context.test.ts"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
-import { UserRole, type User } from "@repo/database/dto";
-import { Container } from "@repo/trpc/container";
+import { UserRole, type User } from "@package/database/dto";
+import { Container } from "@package/trpc/container";
 import type { UserResolver } from "./user.resolver";
 
 export const createContextMock = () => ({

@@ -1,5 +1,5 @@
 {
-  "name": "@repo/auth",
+  "name": "@package/auth",
   "private": true,
   "scripts": {
     "clean": "git clean -xdf .turbo node_modules .next .cache .vitest tsconfig.tsbuildinfo",
@@ -26,8 +26,8 @@
   },
   "devDependencies": {
     "@auth/core": "^0.30.0",
-    "@repo/config": "workspace:^",
-    "@repo/database": "workspace:^",
-    "@repo/eslint-config": "workspace:^"
+    "@package/config": "workspace:^",
+    "@package/database": "workspace:^",
+    "@package/eslint-config": "workspace:^"
   }
 }

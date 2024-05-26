@@ -1,7 +1,7 @@
 "use client";
 
 import Script from "next/script";
-import { env } from "@repo/common/client-env";
+import { env } from "@module/shared/client-env";
 
 export function MicrosoftClarity() {
   return (

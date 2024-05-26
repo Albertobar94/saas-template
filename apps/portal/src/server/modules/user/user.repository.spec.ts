@@ -1,9 +1,9 @@
 import { faker } from "@faker-js/faker";
 import { mockDeep } from "jest-mock-extended";
-import { ContainerTokens } from "@repo/common/constants";
-import { type Db } from "@repo/database/neon";
-import { logger } from "@repo/lib";
-import { Container, type DependencyContainer } from "@repo/trpc/container";
+import { type Db } from "@package/database/neon";
+import { logger } from "@package/logger";
+import { Container, type DependencyContainer } from "@package/trpc/container";
+import { ContainerTokens } from "@module/shared/constants";
 import { UserRepository } from "./user.repository";
 import { UserRepositoryMock } from "./user.repository.mock";
 

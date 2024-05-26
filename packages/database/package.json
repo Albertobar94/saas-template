@@ -1,5 +1,5 @@
 {
-  "name": "@repo/database",
+  "name": "@package/database",
   "private": true,
   "scripts": {
     "clean": "git clean -xdf .turbo node_modules .next .cache .vitest tsconfig.tsbuildinfo",
@@ -13,8 +13,9 @@
     "lint:fix": "eslint src/ --ext .ts,.tsx --fix"
   },
   "devDependencies": {
-    "@repo/config": "workspace:*",
-    "@repo/eslint-config": "workspace:^",
+    "@module/shared": "workspace:^",
+    "@package/config": "workspace:*",
+    "@package/eslint-config": "workspace:^",
     "@types/node": "^20.11.16",
     "drizzle-kit": "^0.20.18",
     "tsx": "^4.9.3",
@@ -23,7 +24,6 @@
   "dependencies": {
     "@neondatabase/serverless": "^0.9.1",
     "@paralleldrive/cuid2": "^2.2.2",
-    "@repo/common": "workspace:^",
     "drizzle-orm": "^0.30.10",
     "drizzle-zod": "^0.5.1"
   },

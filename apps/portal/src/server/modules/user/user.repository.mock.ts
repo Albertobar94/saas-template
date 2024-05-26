@@ -1,8 +1,8 @@
 import { faker } from "@faker-js/faker";
-import { eq } from "@repo/database";
-import type { User } from "@repo/database/dto";
-import { UserRole } from "@repo/database/dto";
-import { user } from "@repo/database/schema";
+import { eq } from "@package/database";
+import type { User } from "@package/database/dto";
+import { UserRole } from "@package/database/dto";
+import { user } from "@package/database/schema";
 import type { UserRepository } from "./user.repository";
 
 export class UserRepositoryMock {

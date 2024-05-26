@@ -1,5 +1,5 @@
 import type { Config } from "drizzle-kit";
-import { DBEnv } from "@repo/common/server-env/db-env";
+import { DBEnv } from "@module/shared/server-env/db-env";
 
 const connectionString = DBEnv.DIRECT_URL;
 

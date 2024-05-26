@@ -1,0 +1,5 @@
+{
+  "extends": "@package/config/typescript/library.json",
+  "include": ["src", "tailwind.config.ts"],
+  "exclude": ["node_modules"]
+}

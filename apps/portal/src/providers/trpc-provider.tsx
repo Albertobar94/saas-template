@@ -6,8 +6,8 @@ import { createTRPCReact } from "@trpc/react-query";
 import { useMemo } from "react";
 import { SuperJSON } from "superjson";
 import { v4 as generateUuidV4 } from "uuid";
-import { env } from "@repo/common/common-env";
-import { Headers } from "@repo/common/constants";
+import { env } from "@module/shared/common-env";
+import { Headers } from "@module/shared/constants";
 import { type AppRouter } from "@/server/app-router";
 
 const trpc = createTRPCReact<typeof AppRouter>();

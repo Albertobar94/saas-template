@@ -2,7 +2,7 @@
 
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import { env } from "@repo/common/client-env";
+import { env } from "@module/shared/client-env";
 
 const stripePromise = loadStripe(env.STRIPE_PUBLISHABLE_KEY);
 

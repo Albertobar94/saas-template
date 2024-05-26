@@ -3,11 +3,11 @@
 import GoogleAnalyticsPlugin from "@analytics/google-analytics";
 import MixpanelPlugin from "@analytics/mixpanel";
 import { Analytics } from "analytics";
-import { env } from "@repo/common/client-env";
-import { AppEnvironments } from "@repo/common/constants";
+import { env } from "@module/shared/client-env";
+import { AppEnvironments } from "@module/shared/constants";
 
 export const analytics = Analytics({
-  app: "@repo/analytics",
+  app: "@package/analytics",
   debug: env.APP_ENV === AppEnvironments.Local,
   plugins: [
     MixpanelPlugin({

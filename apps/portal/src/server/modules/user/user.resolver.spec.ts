@@ -1,9 +1,9 @@
 import { TRPCError } from "@trpc/server";
 import { mockDeep } from "jest-mock-extended";
-import { ContainerTokens } from "@repo/common/constants";
-import { type Logger, logger } from "@repo/lib";
-import type { DependencyContainer } from "@repo/trpc/container";
-import { Container } from "@repo/trpc/container";
+import { logger } from "@package/logger";
+import type { DependencyContainer } from "@package/trpc/container";
+import { Container } from "@package/trpc/container";
+import { ContainerTokens } from "@module/shared/constants";
 import { UserRepository } from "./user.repository";
 import { UserResolver } from "./user.resolver";
 import { UserResolverMock } from "./user.resolver.mock";

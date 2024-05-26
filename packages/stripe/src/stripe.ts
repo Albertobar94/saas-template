@@ -1,5 +1,5 @@
 import Stripe from "stripe";
-import { env } from "@repo/common/server-env";
+import { env } from "@module/shared/server-env";
 
 export class StripeService {
   constructor(private readonly stripe: Stripe) {

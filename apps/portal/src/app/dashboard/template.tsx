@@ -10,7 +10,7 @@ import {
   Settings,
   ShoppingCart,
   Users2,
-} from "@repo/ui/icons";
+} from "@module/ui/icons";
 import {
   Avatar,
   Breadcrumb,
@@ -34,8 +34,8 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@repo/ui";
-import { auth } from "@/server/auth";
+} from "@module/ui";
+import { auth } from "@module/auth";
 
 async function Dashboard({ children }: { children: React.ReactNode }) {
   const session = await auth();

@@ -1,7 +1,7 @@
-import { ContainerTokens } from "@repo/common/constants";
-import { db } from "@repo/database/neon";
-import { logger } from "@repo/lib";
-import { Registry } from "@repo/trpc/container";
+import { db } from "@package/database/neon";
+import { logger } from "@package/logger";
+import { Registry } from "@package/trpc/container";
+import { ContainerTokens } from "@module/shared/constants";
 
 @Registry([
   {

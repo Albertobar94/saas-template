@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@repo/ui/styles/shared-globals.css";
-import { MicrosoftClarity, AnalyticsWrapper } from "@repo/analytics/components";
-import { StripeProvider } from "@repo/stripe/providers";
+import "@module/ui/styles/shared-globals.css";
+import { MicrosoftClarity, AnalyticsWrapper } from "@package/analytics/components";
+import { StripeProvider } from "@package/stripe/providers";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { TrpcProvider } from "@/providers/trpc-provider";
 

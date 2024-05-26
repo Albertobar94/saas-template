@@ -1,3 +1,3 @@
 {
-  "extends": "@repo/config/typescript/base.json"
+  "extends": "@package/config/typescript/base.json"
 }

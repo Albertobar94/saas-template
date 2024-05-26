@@ -11,10 +11,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from "@repo/ui";
+} from "@module/ui";
 import Image from "next/image";
-import { signOut } from "@repo/auth/react";
-import type { Session } from "@repo/auth";
+import { signOut } from "@package/auth/react";
+import type { Session } from "@package/auth";
 
 export function UserNav({ session }: { session: Session | null }) {
   return (

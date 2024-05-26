@@ -1,9 +1,9 @@
 import "reflect-metadata";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 import { cache } from "react";
+import { auth } from "@module/auth";
 import { createContext } from "@/server/app-context";
 import { AppRouter } from "@/server/app-router";
-import { auth } from "@/server/auth";
 
 export const dynamic = "force-dynamic";
 

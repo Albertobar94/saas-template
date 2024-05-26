@@ -129,22 +129,22 @@ pnpm test:server
 
 Apps
 
-- `@repo/portal`: Main Web Portal with authorization for Admins and Users. Built with [Next.js](https://nextjs.org/).
-- `@repo/portal-e2e`: E2E test repo for Portal app. Built with [Playwright](https://playwright.dev/)
+- `@app/portal`: Main Web Portal with authorization for Admins and Users. Built with [Next.js](https://nextjs.org/).
+- `@app/portal-e2e`: E2E test repo for Portal app. Built with [Playwright](https://playwright.dev/)
 
 Packages
 
-- `@repo/auth`: authentication module. Built with [Auth.js](https://authjs.dev/).
-- `@repo/analytics`: analytics focused module. Built with [Analytics](https://getanalytics.io/).
-- `@repo/common`: shared code for all apps and packages.
-- `@repo/config`: repo configuration files.
-- `@repo/database`: portal database. Built with [Drizzle](https://orm.drizzle.team/)
-- `@repo/dto`: data transfer objects for portal app. Built with [Zod](https://zod.dev/)
-- `@repo/eslint-config`: eslint config files. Built with [Eslint](https://eslint.org/)
-- `@repo/lib`: shared external libraries that require some configuration and are reused in all apps and packages.
-- `@repo/stripe`: module dedicated to stripe code. Built with [Stripe](https://stripe.com).
-- `@repo/trpc`: client server library settings for portal app. Built with [Trpc](https://trpc.io/).
-- `@repo/ui`: a component library shared by all apps. Built with [Shadcn/ui](https://ui.shadcn.com/)
+- `@package/auth`: authentication module. Built with [Auth.js](https://authjs.dev/).
+- `@package/analytics`: analytics focused module. Built with [Analytics](https://getanalytics.io/).
+- `@module/shared`: shared code for all apps and packages.
+- `@package/config`: repo configuration files.
+- `@package/database`: portal database. Built with [Drizzle](https://orm.drizzle.team/)
+- `@module/dto`: data transfer objects for portal app. Built with [Zod](https://zod.dev/)
+- `@package/eslint-config`: eslint config files. Built with [Eslint](https://eslint.org/)
+- `@package/logger`: shared external libraries that require some configuration and are reused in all apps and packages.
+- `@package/stripe`: module dedicated to stripe code. Built with [Stripe](https://stripe.com).
+- `@package/trpc`: client server library settings for portal app. Built with [Trpc](https://trpc.io/).
+- `@module/ui`: a component library shared by all apps. Built with [Shadcn/ui](https://ui.shadcn.com/)
 
 ## 🥇 Features
 

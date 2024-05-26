@@ -1,9 +1,0 @@
-{
-  "extends": "@repo/config/typescript/base.json",
-  "compilerOptions": {
-    "module": "Preserve",
-    "moduleResolution": "Bundler"
-  },
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
-}

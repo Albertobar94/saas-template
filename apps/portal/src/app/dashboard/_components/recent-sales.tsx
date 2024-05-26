@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@repo/ui";
+import { Avatar, AvatarFallback, AvatarImage } from "@module/ui";
 
 export function RecentSales() {
   return (

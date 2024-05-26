@@ -10,11 +10,11 @@ import {
   FormMessage,
   FormProvider,
   Input,
-} from "@repo/ui";
+} from "@module/ui";
 import { useForm } from "react-hook-form";
-import type { EmailLinkInput } from "@repo/dto";
-import { EmailLinkSchema } from "@repo/dto";
-import { emailLinkSignIn } from "@/server/actions";
+import type { EmailLinkInput } from "@module/dto";
+import { EmailLinkSchema } from "@module/dto";
+import { emailLinkSignIn } from "~/src/server/DEPRECATED actions";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any -- TODO: fix this
 function createFormData(obj: any) {

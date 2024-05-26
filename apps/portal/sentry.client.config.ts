@@ -16,8 +16,8 @@ import {
   setCurrentClient,
 } from "@sentry/nextjs";
 import * as Sentry from "@sentry/nextjs";
-import { env } from "@repo/common/client-env";
-import { AppEnvironments } from "@repo/common/constants";
+import { env } from "@module/shared/client-env";
+import { AppEnvironments } from "@module/shared/constants";
 import packageJson from "./package.json";
 
 export const sentryClientConfig: Sentry.BrowserOptions = {

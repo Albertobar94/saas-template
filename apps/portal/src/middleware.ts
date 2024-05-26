@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { auth as mwAuth } from "./server/auth";
+import { auth as mwAuth } from "@module/auth";
 
 export const middleware: ReturnType<typeof mwAuth> = mwAuth(({ auth, geo, nextUrl }) => {
   const user = auth?.user;

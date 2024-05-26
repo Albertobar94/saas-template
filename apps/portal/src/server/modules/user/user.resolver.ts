@@ -1,15 +1,13 @@
 import "reflect-metadata";
-import { ContainerTokens } from "@repo/common/constants";
-import { UserRole } from "@repo/database/dto";
-import type { UserInfoInput } from "@repo/dto";
-import type { Logger } from "@repo/lib";
-import { Inject, Resolver } from "@repo/trpc/container";
-import type { ProtectedContext } from "@repo/trpc/context";
-import type { ProcedureResolverOpts } from "@repo/trpc/resolver";
-import { AbstractResolver } from "@repo/trpc/resolver";
+import { UserRole } from "@package/database/dto";
+import type { Logger } from "@package/logger";
+import { Inject, Resolver } from "@package/trpc/container";
+import type { ProtectedContext } from "@package/trpc/context";
+import { AbstractResolver, type ProcedureResolverOpts } from "@package/trpc/resolver";
+import { isAdmin, AllowedRoles } from "@module/authz";
+import type { UserInfoInput } from "@module/dto";
+import { ContainerTokens } from "@module/shared/constants";
 import { UserRepository } from "./user.repository";
-import { isAdmin } from "@/server/authz/is-admin.validator";
-import { AllowedRoles } from "@/server/decorators/allowed-roles.decorator";
 
 @Resolver()
 export class UserResolver extends AbstractResolver {

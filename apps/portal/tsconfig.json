@@ -1,12 +1,12 @@
 {
-  "extends": "@repo/config/typescript/next.json",
+  "extends": "@package/config/typescript/next.json",
   "compilerOptions": {
-    "experimentalDecorators": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
+    "experimentalDecorators": true,
     "skipLibCheck": true,
     "noEmit": true,
     "baseUrl": ".",
@@ -14,8 +14,8 @@
       "~/*": ["./*"],
       "@/app/*": ["./src/app/*"],
       "@/server/*": ["./src/server/*"],
-      "@/providers/*": ["./src/providers/*"],
-      "@/config/*": ["./src/config/*"]
+      "@/features/*": ["./src/features/*"],
+      "@/providers/*": ["./src/providers/*"]
     }
   },
   "include": [
@@ -26,5 +26,5 @@
     "**/*.tsx",
     ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "*.generated.ts"]
+  "exclude": ["node_modules", ".next"]
 }

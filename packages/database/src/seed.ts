@@ -1,4 +1,4 @@
-import { DBEnv } from "@repo/common/server-env/db-env";
+import { DBEnv } from "@module/shared/server-env/db-env";
 import { db } from "./neon";
 import * as schema from "./schema";
 import * as seeds from "./seeds";

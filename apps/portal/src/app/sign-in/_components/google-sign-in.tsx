@@ -1,8 +1,8 @@
 "use client";
 
-import { signIn } from "@repo/auth/react";
-import { Button } from "@repo/ui";
-import { Icons } from "@repo/ui/icons";
+import { signIn } from "@package/auth/react";
+import { Button } from "@module/ui";
+import { Icons } from "@module/ui/icons";
 import { useState } from "react";
 
 export function GoogleSignIn() {
@@ -19,7 +19,6 @@ export function GoogleSignIn() {
     <Button
       className="w-full"
       isLoading={isLoading}
-       
       onClick={handleGoogleSignIn}
       startIcon={<Icons.Google className="mr-2 size-4" />}
       type="submit"

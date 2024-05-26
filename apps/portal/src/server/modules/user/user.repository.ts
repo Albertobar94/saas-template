@@ -1,11 +1,12 @@
-import { ContainerTokens } from "@repo/common/constants";
-import { eq } from "@repo/database";
-import { type Db } from "@repo/database/neon";
-import { user } from "@repo/database/schema";
-import { type UserInfoInput } from "@repo/dto";
-import type { Logger } from "@repo/lib";
-import { Inject, Repository } from "@repo/trpc/container";
-import { LogDuration } from "@/server/decorators/log-duration.decorator";
+import { eq } from "@package/database";
+import { type Db } from "@package/database/neon";
+import { user } from "@package/database/schema";
+import type { Logger } from "@package/logger";
+import { Inject, Repository } from "@package/trpc/container";
+import { type UserInfoInput } from "@module/dto";
+import { ContainerTokens } from "@module/shared/constants";
+
+// import { LogDuration } from "~/src/server/DEPRECATED decorators/log-duration.decorator";
 
 @Repository()
 export class UserRepository {
@@ -16,22 +17,18 @@ export class UserRepository {
     this.logger = logger.getSubLogger({ name: "UserRepository" });
   }
 
-  @LogDuration()
-  async userInfo(input: NonNullable<UserInfoInput>) {
+  // @LogDuration()
+  userInfo(input: NonNullable<UserInfoInput>) {
     if (input.email) {
-      const result = await this.db.query.user.findFirst({
+      return this.db.query.user.findFirst({
         where: eq(user.email, input.email),
       });
-
-      return result ?? null;
     }
 
     if (input.id) {
-      const result = await this.db.query.user.findFirst({
+      return this.db.query.user.findFirst({
         where: eq(user.id, input.id),
       });
-
-      return result ?? null;
     }
 
     throw new Error(`UserRepository: Invalid input for userInfo ${this.userInfo.name}`);

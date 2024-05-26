@@ -1,0 +1,27 @@
+{
+  "name": "@package/error",
+  "scripts": {
+    "clean": "git clean -xdf .turbo node_modules .next .cache .vitest tsconfig.tsbuildinfo",
+    "lint": "eslint src/ --ext .ts,.tsx",
+    "lint:fix": "eslint src/ --ext .ts,.tsx --fix"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@package/config": "workspace:^",
+    "@package/eslint-config": "workspace:^"
+  },
+  "exports": {
+    ".": "./src/error.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./src/error.ts"
+      ]
+    }
+  }
+}

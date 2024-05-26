@@ -1,5 +1,5 @@
 import { migrate } from "drizzle-orm/neon-http/migrator";
-import { DBEnv } from "@repo/common/server-env/db-env";
+import { DBEnv } from "@module/shared/server-env/db-env";
 import { config } from "./config";
 import { db } from "./neon";
 
